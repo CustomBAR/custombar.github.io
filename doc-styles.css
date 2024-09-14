@@ -1,0 +1,158 @@
+/* General Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #e0e0e0;
+    background-color: #121212;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar (Inherited from main styles.css) */
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1e1e1e;
+    padding: 15px 20px;
+    color: #ffffff;
+    border-bottom: 1px solid #333;
+}
+
+.navbar-item {
+    text-decoration: none;
+    color: #e0e0e0;
+    padding: 10px 15px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.navbar-item:hover,
+.navbar-item.active {
+    background-color: #333;
+}
+
+/* Main Content */
+main {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+/* Documentation Container */
+.doc-container {
+    display: flex;
+    width: 100%;
+    max-width: 1200px;
+    background-color: #1e1e1e;
+    border-radius: 8px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+/* Table of Contents (TOC) */
+.toc {
+    flex: 1;
+    background-color: #1f1f1f;
+    padding: 20px;
+    border-right: 2px solid #333;
+    overflow-y: auto;
+    height: calc(100vh - 60px); /* Adjust height to fit the viewport */
+}
+
+.toc h2 {
+    color: #61dafb;
+    margin-bottom: 1em;
+}
+
+.toc ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.toc li {
+    margin-bottom: 15px;
+}
+
+.toc a {
+    color: #61dafb;
+    text-decoration: none;
+    font-size: 1.1em;
+}
+
+.toc a:hover {
+    text-decoration: underline;
+}
+
+/* Documentation Content */
+.doc-content {
+    flex: 3;
+    padding: 20px;
+    color: #e0e0e0;
+    overflow-y: auto;
+    height: calc(100vh - 60px); /* Adjust height to fit the viewport */
+}
+
+.doc-content h1 {
+    color: #61dafb;
+    margin-bottom: 0.5em;
+}
+
+.doc-content h2 {
+    color: #ffffff;
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+}
+
+.doc-content p {
+    line-height: 1.8;
+    margin-bottom: 1.5em;
+}
+
+.doc-content ol, 
+.doc-content ul {
+    margin-left: 20px;
+    margin-bottom: 1.5em;
+}
+
+.doc-content li {
+    margin-bottom: 10px;
+}
+
+.doc-content a {
+    color: #61dafb;
+    text-decoration: none;
+}
+
+.doc-content a:hover {
+    text-decoration: underline;
+}
+
+/* Code Block Styling */
+.code-block {
+    background-color: #282c34;
+    border: 1px solid #333;
+    border-radius: 8px;
+    padding: 15px;
+    overflow-x: auto;
+    margin-bottom: 1.5em;
+    color: #f8f8f2;
+    font-family: 'Courier New', Courier, monospace;
+    white-space: pre-wrap;
+}
+
+.code-block code {
+    color: #f8f8f2;
+    font-size: 0.95em;
+    background-color: transparent;
+}
+
+/* Footer Styling */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #1e1e1e;
+    color: #ffffff;
+    border-top: 1px solid #333;
+    margin-top: 20px;
+}

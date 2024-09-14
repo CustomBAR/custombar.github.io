@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documentation - CustomBAR</title>
+    <link rel="stylesheet" href="doc-styles.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <h1>CustomBAR</h1>
+        <p>Track your Rumble Follower Count on a Progress bar!</p>
+        <a href="https://github.com/tinyplayerss/CustomBAR/releases/latest" class="download-button">Download Latest Release</a>
+    </header>
+
+    <!-- Navbar -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="doc.html">Docs</a></li>
+            <li><a href="credit.html">Credits</a></li>
+            <li><a href="https://paypal.me/2players1Gamer" class="donate-button">Donate</a></li>
+        </ul>
+    </nav>
+    <!-- Main Content -->
+    <main>
+        <div class="doc-container">
+            <!-- Table of Contents (TOC) -->
+            <aside class="toc">
+                <h2>Table of Contents</h2>
+                <ul>
+                    <li><a href="#overview">Overview</a></li>
+                    <li><a href="#installation">Installation</a></li>
+                    <li><a href="#configuration">Configuration</a></li>
+                    <li><a href="#usage">Usage</a></li>
+                    <li><a href="#troubleshooting">Troubleshooting</a></li>
+                    <li><a href="#self-hosting">Self-Hosting</a></li>
+                </ul>
+            </aside>
+            <!-- Documentation Content -->
+            <div class="doc-content">
+                <h1 id="overview">Overview</h1>
+                <p>CustomBAR is a 90s-styled progress bar designed for streamers on Rumble. It dynamically updates based on your follower count and displays your progress towards your goals.</p>
+                
+                <h2 id="installation">Installation</h2>
+                <h3>Prerequisites</h3>
+                <p>Follow the instructions based on your operating system:</p>
+                <p><strong>Windows:</strong></p>
+                <div class="code-block">
+                    <code>Visit <a href="https://nodejs.org/">Node.js download page</a> & Download the Windows installer (.msi).</code>
+                </div>
+                <p><strong>macOS:</strong></p>
+                <div class="code-block">
+                    <code>Visit <a href="https://nodejs.org/">Node.js download page</a> & Download the macOS installer (.pkg).</code>
+                </div>
+                <p><strong>Linux:</strong></p>
+                <div class="code-block">
+                    <code>sudo apt update</code><br>
+                    <code>sudo apt install nodejs npm</code>
+                </div>
+
+                <h3>Setting Up CustomBAR</h3>
+                <div class="code-block">
+                    <p><strong>Clone the Repository:</strong></p>
+                    <code>git clone https://github.com/tinyplayerss/custombar.git</code>
+                </div>
+                <div class="code-block">
+                    <p><strong>Install Dependencies:</strong></p>
+                    <code>npm install</code>
+                </div>
+                <div class="code-block">
+                    <p><strong>Configure Your API Key:</strong></p>
+                    <code>Edit server.js & replace 'YOUR_API_URL' with your actual API URL.</code>
+                    You can find your API at <a href="https://rumble.com/account/livestream-api">Rumble</a>
+                </div>
+                <div class="code-block">
+                    <p><strong>Start the Server:</strong></p>
+                    <code>npm start</code>
+                </div>
+
+                <h2 id="usage">Integrating with OBS (Open Broadcaster Software)</h2>
+                <div class="code-block">
+                    <p><strong>Run the Local Server:</strong></p>
+                    <code>Ensure the server is running by executing npm start.</code>
+                </div>
+                <div class="code-block">
+                    <p><strong>Add a Browser Source in OBS:</strong></p>
+                    <code>Open OBS Studio & Add a new Browser source with URL http://localhost:3000.</code>
+                </div>
+
+                <h2 id="troubleshooting">Troubleshooting</h2>
+                <div class="code-block">
+                    <p><strong>If the Progress Bar Does Not Load:</strong></p>
+                    <code>Ensure the local server is running & accessible at http://localhost:3000.</code>
+                </div>
+                <div class="code-block">
+                    <p><strong>If the Progress Bar Is Not Updating:</strong></p>
+                    <code>Check the API response & ensure the API URL is correctly set.</code>
+                </div>
+
+                <h2 id="self-hosting">Self-Hosting</h2>
+                <p>To host the CustomBAR project on your own local server, follow these instructions:</p>
+
+                <h3>Prerequisites</h3>
+                <p>You need Node.js installed on your machine. Follow the installation instructions in the <a href="#installation">Installation</a> section if you haven’t done so already.</p>
+
+                <h3>Setting Up the Server</h3>
+                <div class="code-block">
+                    <p><strong>Clone the Repository:</strong></p>
+                    <code>git clone https://github.com/tinyplayerss/custombar.git</code>
+                </div>
+                <div class="code-block">
+                    <p><strong>Navigate to the Project Directory:</strong></p>
+                    <code>cd custombar</code>
+                </div>
+                <div class="code-block">
+                    <p><strong>Install Dependencies:</strong></p>
+                    <code>npm install</code>
+                </div>
+
+                <h3>Running the Server</h3>
+                <div class="code-block">
+                    <p><strong>Start the Server:</strong></p>
+                    <code>npm start</code>
+                </div>
+                <p>After running the above command, the server should be accessible at <a href="http://localhost:3000">http://localhost:3000</a>.</p>
+
+                <h3>Additional Configuration</h3>
+                <p>You can configure additional settings or environment variables by creating a `.env` file in the root directory of the project. Here’s an example of a `.env` file:</p>
+                <div class="code-block">
+                    <code>API_URL=https://your-api-url.com</code>
+                </div>
+                <p>Replace `https://your-api-url.com` with the URL of the API you are using.</p>
+
+                <h3>Accessing the Application</h3>
+                <p>Once the server is running, you can access the application through your web browser by navigating to <a href="http://localhost:3000">http://localhost:3000</a>.</p>
+            </div>
+        </div>
+    </main>
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 CustomBAR. All rights reserved.</p>
+    </footer>
+</body>
+</html>

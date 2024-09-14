@@ -1,0 +1,79 @@
+/* credit-styles.css */
+
+/* Container for the credit section */
+.credit-container {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Credit Section Title */
+.credit-container h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Introductory Text */
+.credit-intro {
+    text-align: center;
+    font-size: 1.2em;
+    margin-bottom: 40px;
+    color: white;
+}
+
+/* Grid for credit items */
+.credits-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Individual credit item */
+.credit-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Profile image */
+.profile {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+/* Credit name */
+.credit-name {
+    font-weight: bold;
+    color: white;
+}
+
+/* Credit list styling */
+.credit-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 40px 0;
+}
+
+.credit-list li {
+    margin-bottom: 15px;
+    font-size: 1.1em;
+}
+
+.credit-list a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.credit-list a:hover {
+    text-decoration: underline;
+}
+
+.highlight {
+    color: #007bff;
+}
